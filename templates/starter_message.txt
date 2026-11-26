@@ -1,0 +1,14 @@
+New render job. The files are in jobs/{JOB}/inputs.
+
+Read every file in that folder and the email below, and understand all of it before you start any work. Follow the method in CLAUDE.md.
+
+First, tell me:
+1. What each file is, and which render is the latest if there is more than one.
+2. Everything in the latest render that does not match the elevation, part by part.
+3. Anything the drawing cannot answer that I need to ask the designer.
+4. The passes you plan to run, in order, and what each one will and will not fix.
+
+Do not make any image until I have answered your questions. Detail matters more than speed: these are high-end homes and mistakes are costly.
+
+The designer's email:
+

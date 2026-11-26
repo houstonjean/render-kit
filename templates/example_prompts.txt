@@ -1,0 +1,99 @@
+EXAMPLE PROMPTS THAT WORKED
+From the first job: a stone house, front elevation. Each one is a full instruction as it was sent.
+Copy the closest one into a job's prompts.txt and change the parts that differ.
+
+What they have in common:
+  - one change, then a list of what must stay identical
+  - parts named the way a mason would name them
+  - what it is NOT ("not a round arch", "no columns")
+  - lettering spelled out letter by letter
+  - for detail work: a crop plus the elevation at the same framing, and "the drawing wins"
+
+======================================================================
+EXAMPLE 1 - CHANGE ONE MATERIAL ACROSS THE WHOLE IMAGE
+Uploaded: the render, then three photos of the real stone from the supplier's page.
+Settings: aspect ratio 16:9, resolution 4K.
+Result: lightness gap between field stone and cut stone went from 13.5 to under 6. Nothing else moved.
+----------------------------------------------------------------------
+Edit the first image, the photoreal render of the house. The other three images are photo references of the real stone to use: Pecos Buff chopped limestone.
+
+CHANGE ONLY ONE THING: the rough field-stone veneer.
+Replace every area that is currently gray rough stone (the house walls, the three chimney shafts, the low front garden walls, the side garden wall and the gate piers) with Pecos Buff chopped limestone matching the reference photos:
+- Color: warm cream, buff and light tan, with a few pale gold stones and a few soft warm-gray stones. No blue-gray stones. No dark stones.
+- Texture: split face with chopped edges.
+- Pattern: roughly squared stones in loose horizontal courses of mixed heights, about 4, 6 and 8 inches tall, in mixed lengths, slightly irregular. Not uniform bricks.
+- Mortar: cream-buff, close to the stone color, joints nearly flush. No dark joints and no bright white joints.
+
+DO NOT CHANGE the smooth cut limestone. All smooth beige cut-stone trim keeps exactly the color and finish it has now: the two tall window bays, every window and door surround, the stepped surrounds around the two large arched windows, the gable copings, the chimney caps, the pier caps, the ball finials and the entry surround.
+
+RESULT WANTED: a nearly monochromatic stone house. The field stone and the cut stone sit in the same warm beige family. The field stone reads only slightly darker and more textured than the cut stone. Low contrast between the two.
+
+KEEP EVERYTHING ELSE IDENTICAL: same camera position and framing, same building shape and proportions, same windows and doors with the same pane counts, same slate roof, same copper downspouts, same lanterns, same planting, lawn, driveway, street, trees and sky, same sun direction and shadows. Do not add, remove or move anything. Do not add any text.
+
+======================================================================
+EXAMPLE 2 - REMOVE THINGS THE IMAGE MODEL INVENTED
+Uploaded: the render only.
+Settings: aspect ratio 16:9, resolution 4K.
+Result: all four kinds of item gone in one run. The house itself was unchanged at zoom.
+----------------------------------------------------------------------
+Edit this photoreal render of a stone house. Remove the items listed below, which are not part of the architect's design. Change nothing else.
+
+REMOVE:
+1. All four copper downspouts and their copper leader heads on the front wall. There is one on each side of each of the two tall bowed window bays. Where each one was, continue the stone that is beside it, so the wall looks as if nothing was ever attached there.
+2. The two wall lanterns beside the front door.
+3. The two potted topiary shrubs in square planters beside the front steps.
+4. The low stone garden walls near the street in front of the house: both long low walls, all of their piers and ball finials, and the stone steps and short path that pass through the wall on the right. Replace them with open lawn that continues the existing lawn and slopes gently down to the sidewalk.
+
+KEEP EVERYTHING ELSE IDENTICAL: the same camera and framing. The house exactly as it is: every wall, the buff field stone and its pattern, all smooth cut-stone trim, every window and every pane, the front door, the roof, the three chimneys, and the ball finials on top of the two window bays and on the curved gable. The taller garden wall at the far left that joins the house. The driveway gates and their piers at the far right. The driveway, the planting and white flowers along the house, the trees, street, sidewalk and sky, and the lighting and shadows. Do not add anything. Do not add any text.
+
+======================================================================
+EXAMPLE 3 - REBUILD A DETAIL ZONE FROM THE ELEVATION (crop plus lined-up drawing)
+Uploaded: a crop of the render (the entry, between the two bays), then the elevation rasterized to exactly the same framing, with the bays, roof and sheet title blanked white.
+Settings: aspect ratio 9:16, resolution 4K.
+Result: drawing lines landing on a render edge in the door zone went from 42% to 84%. Lettering correct in 3 of 3 runs. 2 of 3 runs also rebuilt the gable and round window to the drawing.
+----------------------------------------------------------------------
+Image 1 is a crop from a photoreal render showing the center entry of a stone house. Image 2 is the architect's elevation drawing of exactly the same view, at the same scale and in the same position as image 1: any point in image 2 is the same point of the building in image 1. Image 2 is the source of truth for shape.
+
+Rebuild the stonework, windows and doors in the middle of image 1 so that every edge sits where image 2 draws it, rendered photoreal in the same materials, light and camera as image 1. The door surround now in image 1 is wrong and must be replaced completely. The white areas of image 2 carry no information: in those areas keep image 1 exactly as it is.
+
+Build these parts, top to bottom, exactly as drawn in image 2:
+
+1. Curved gable at the top: reshape its smooth cut-stone coping to the outline drawn. From the small flat cap under the ball finial, each side steps down, curves out in an S-curve, breaks at a small square step, curves out in a second larger S-curve, then drops in one square step to a short level ledge. Keep the ball finial. Keep rough field stone inside the gable.
+
+2. Small window in the gable: a cut-stone hood mould above it with a short drop and a square label stop at each end, and a projecting stone sill below it, as drawn.
+
+3. Round window: leaded glass with dark lead lines in the interlaced pattern drawn, two rounded-end bands crossing in an X and divided by a diagonal lattice into diamond panes. Around it, a smooth cut-stone ring with eight separate raised blocks that stick out beyond the ring like the teeth of a gear, with plain ring showing between the blocks. No straight cross muntins and no inner circle.
+
+4. Date tablet directly above the door: one smooth cut-stone tablet whose two ends are shaped in a plain stepped S-curve, sitting on a thin projecting stone shelf. Incised Roman numerals, centered, reading exactly MMXXVII (seven letters: M, M, X, X, V, I, I). No rosettes, no discs, no other carving on the tablet. No other text anywhere in the image.
+
+5. Door surround: follow the outline in image 2 exactly. It is built of large rectangular smooth cut-limestone ashlar blocks, with the block joints where image 2 draws them. Directly under the shelf the stonework is at its widest at the top, then each top corner is scooped concave. Below that the sides run straight down to about half the height of the door. From there down, each side sweeps outward in a long concave curve, so the stonework is clearly wider at the ground than at the top, and it ends on a low plinth. The flared lower part is a corner buttress: it projects forward toward the viewer as well as sideways. No columns, no pilasters, no flat classical lintel, no pediment.
+
+6. Door opening: a Tudor arch, shallow and pointed (four-centred). It is not a round arch. A moulded hood mould follows the arch and ends in a small square label stop on each side. A tapered keystone at the point of the arch rises to a small cap block under the shelf.
+
+7. Doors: the arch is the open front of a small porch. One pair of doors is set back about four feet inside it, so the stone sides and underside of the archway are visible and the doors sit in soft shade. The doors are stained wood in a medium-dark walnut brown with visible grain. They are not metal and not black. Each leaf has a glazed upper part divided into small rectangular panes exactly as drawn, three panes wide and four panes high, with the top panes cut to the line of the arch, and a solid square lower panel carved with a circular scroll medallion inside a four-pointed frame, as drawn.
+
+8. Steps: stone steps up to the porch, as wide as the door opening, standing on a wider landing slab, as drawn.
+
+Nothing is mounted on or placed against this stonework: no lanterns, no light fixtures, no planters, no potted plants, no downspouts, no house numbers. No plants stand in front of the door surround: its whole outline must be visible down to the ground, so trim back the two shrubs that stand next to it.
+
+Materials: every stone part listed above is the same smooth warm beige cut limestone already used on the window bays in image 1. The wall around them stays the same rough buff field stone already in image 1.
+
+Keep unchanged: the framing and camera of image 1, the two bowed window bays at the left and right edges, the roof and the height of its ridge, the chimney, the sky, the driveway, the lighting and the shadow direction.
+
+Ignore the dashed lines, the fine vertical shading lines and the arrow in the drawing. They are drafting marks, not built objects. Do not draw any black outlines: the result is a photograph, not a drawing.
+
+======================================================================
+EXAMPLE 4 - SMALL FOLLOW-UP EDIT ON THE BEST RESULT
+Uploaded: the best result of example 3, then the same lined-up elevation.
+Settings: aspect ratio 9:16, resolution 4K.
+Result: both runs removed the shrubs and added the joints. One of the two also added paving nobody asked for, so check every run.
+----------------------------------------------------------------------
+Edit image 1, a photoreal render of the center entry of a stone house. Image 2 is the architect's elevation drawing of exactly the same view, at the same scale and in the same position. Make only these two changes:
+
+1. Remove the two tall rounded green shrubs that stand directly beside the stone door surround, one on each side. Where they were, show the base of the stone door surround and its plinth complete down to the ground, with the outline that image 2 draws, and a bare dark mulch bed beside it. Keep the low white-flowering plants further out to the left and right.
+
+2. The flared lower part of the door surround, on both sides of the doors, is built from coursed rectangular cut-limestone blocks. Add fine horizontal and vertical block joints there, in the positions image 2 draws them, matching the joints already visible in the upper part of the surround.
+
+Change nothing else. Keep the rest of image 1 exactly the same: the gable, the small window, the round window, the date tablet reading MMXXVII, the arch, hood mould and keystone, the wood doors, the steps and landing, the rough field stone wall and its coursing, the two window bays at the edges, the roof, chimney, sky, driveway, lighting and shadows. Do not add anything. Do not draw black outlines: the result is a photograph, not a drawing.
+
+======================================================================

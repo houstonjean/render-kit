@@ -1,0 +1,15 @@
+RENDER JOB - PROMPTS
+One block per pass. Claude fills these in. scripts/run_pass.py reads a block by its "PASS n" name:
+the instruction is everything between the dashed line and the next line of equals signs.
+Settings for every pass: model Nano Banana Pro (gemini-3-pro-image), resolution 4K, Grounding with Google Search ON.
+
+======================================================================
+PASS 1 - (what this pass changes)
+Upload in this order:
+  1. (file)
+  2. (file)
+Settings: aspect ratio (16:9 for the whole image), resolution 4K.
+----------------------------------------------------------------------
+(instruction goes here)
+
+======================================================================

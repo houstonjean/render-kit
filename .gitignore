@@ -1,0 +1,11 @@
+# Client drawings and renders never go to GitHub
+jobs/
+
+# Keys and local settings
+.env
+*.key
+.claude/settings.local.json
+
+# Python
+__pycache__/
+*.pyc

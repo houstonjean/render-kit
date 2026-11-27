@@ -30,7 +30,7 @@ Create all three with a company email, not a personal one, so the firm keeps the
    - Both include Claude Code and the top model, Fable, up to half the weekly allowance.
    - For a firm that will keep using it: the **Team** plan needs 2 seats (premium seat $125 + standard seat $25 = $150/month) and states "No model training on your content by default". On Max and Ultra that is a setting you turn off yourself: in claude.ai open Settings, then Privacy, and switch off the option that lets your chats be used to improve the model.
 2. **Google AI Studio.** Go to aistudio.google.com and sign in with a Google account. Open the API keys page (key icon, bottom left) and set up billing when asked. The paid tier is what makes 4K images available, and Google states paid-tier content is not used to improve its products.
-3. **GitHub.** Go to github.com and create a free account. Skip this for now if you are starting from the zip file.
+3. **GitHub (optional).** Downloading the kit and getting updates needs no account. Create a free account at github.com only if you will send improvements back to the kit (Part 7).
 
 ---
 
@@ -44,17 +44,15 @@ Pick one.
 
 ```powershell
 winget install -e --id Git.Git
-winget install -e --id GitHub.cli
 ```
 
 Close PowerShell, open it again, then:
 
 ```powershell
-gh auth login
-gh repo clone houstonjean/render-kit C:\render-kit
+git clone https://github.com/houstonjean/render-kit C:\render-kit
 ```
 
-The repository is private. Before the clone works, the owner (`houstonjean`) has to add your GitHub account as a collaborator (Part 7) and you have to accept the invitation GitHub emails you. `gh auth login` asks a few questions: choose GitHub.com, HTTPS, and "Login with a web browser".
+The repository is public, so this needs no GitHub account and no sign-in.
 
 ---
 
@@ -146,24 +144,16 @@ The kit is the part worth protecting: the playbook, the scripts and the prompt l
 
 **Client files never go to GitHub.** The `jobs` folder is excluded by the kit's `.gitignore`. Back that folder up the way the firm backs up its other project files.
 
-**The person who owns the kit, once:**
+The kit lives at https://github.com/houstonjean/render-kit and is public: anyone can download it, only invited accounts can change it.
 
-```powershell
-cd C:\render-kit
-git init
-git add .
-git commit -m "Render kit"
-gh repo create render-kit --private --source . --push
-```
-
-Then on github.com open the repository, go to Settings, then Collaborators, and add each office's GitHub account.
-
-**Each office PC, to get improvements:**
+**Each office PC, to get improvements (no account needed):**
 
 ```powershell
 cd C:\render-kit
 git pull
 ```
+
+**To send improvements back, once:** create a free GitHub account, send the username to the owner (`houstonjean`) to be added as a collaborator, accept the invitation GitHub emails you, then run `gh auth login` in PowerShell (choose GitHub.com, HTTPS, and "Login with a web browser").
 
 **After a job, to save a prompt that worked:** copy it into `templates\example_prompts.txt`, then:
 
